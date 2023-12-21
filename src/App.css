@@ -1,0 +1,223 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.grid-container {
+  margin: 5px;
+  border: 1px solid black;
+}
+
+.grid-item {
+  margin: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.card {
+  background-color: aqua;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-name,
+.post-count {
+  font-weight: bold;
+}
+
+.container-post {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #896790;
+  color: #fff;
+  box-shadow: 2px #dfbbda;
+}
+
+.clock-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: row;
+  padding: 10px;
+}
+
+.clock-text {
+  font-size: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: block;
+  margin-bottom: 10px;
+  margin-right: 12px;
+  background-color: #101213;
+}
+.play-button,
+.pause-button {
+  background-color: pink;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.play-button:hover,
+.pause-button:hover {
+  background-color: darkpink;
+}
+.clock {
+  flex: 1;
+  text-align: right;
+}
+
+.box {
+  flex: 1;
+  margin-right: 10px;
+  margin-left: 1px;
+}
+
+.searchable-dropdown {
+  cursor: pointer;
+  width: 150px;
+  padding: 5px;
+}
+
+.rectangle {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #dfbbda;
+  width: 100%;
+  margin: 20px;
+  height: 150px;
+  margin: 10px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.grid-item-post {
+  cursor: pointer;
+  background-color: #bfadcc;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  color: #fff;
+  box-shadow: #101213;
+}
+/* Add your existing styles here */
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .clock-container {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .box,
+  .clock {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .searchable-dropdown {
+    cursor: pointer;
+    width: 50px;
+  }
+}
+
+.left-side {
+  width: 45%;
+}
+
+.right-side {
+  width: 45%;
+}
+
+.left-side div,
+.right-side div {
+  margin-bottom: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
