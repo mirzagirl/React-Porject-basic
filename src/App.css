@@ -54,7 +54,7 @@
 }
 
 .clock-text {
-  font-size: 25px;
+  font-size: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   display: block;
   margin-bottom: 10px;
@@ -175,7 +175,7 @@
 @media (max-width: 768px) {
   .searchable-dropdown {
     cursor: pointer;
-    width: 50px;
+    width: 70px;
   }
 }
 
